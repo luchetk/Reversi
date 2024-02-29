@@ -1,0 +1,15 @@
+ * The player interface will have the following:
+ * fields:
+ * - color
+ * methods:
+ * - getColor --> returns the player color of the player
+ * - getCoordinatesOfMove --> determines where the user is going to move
+
+ * NOTE: a controller will interact with this class to get the coordinates of the
+ * move that the player is going to do. The player is an interface so that
+ * a human or AI player can later extend it,with AI player having implementation
+ * for getCoordinatesOfInformedMove which will determine more informed moves.
+ * The player will get the coordinates of a move from a player click and then
+ * each player will interact with its own controller and view. The controller
+ * will determine these coordinates and will pass the associated player color
+ * and coordinates to make a move using the model.
